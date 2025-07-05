@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: blue;
+}
+.wapper{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wapper .loader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+}
+.loader .loading{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0px 10px;
+    animation: load 0.8s ease infinite; 
+}
+.loader .loading .one{
+    animation-delay: 0.3s;
+}
+.loader .loading .two{
+    animation-delay: 0.4s;
+}
+.loader .loading .three{
+    animation-delay: 0.5s;
+}
+
+@keyframes load {
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+}
